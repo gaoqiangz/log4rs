@@ -53,13 +53,19 @@ name = "rotation"
 harness = false
 
 [dependencies]
+
+# kintree
+
+log-mdc = { version = "0.2.0-rc.1", registry = "kintree", optional = true }
+
+# crates.io
+
 arc-swap = "1.2"
 chrono = { version = "0.4", optional = true }
 flate2 = { version = "1.0", optional = true }
 fnv = "1.0"
 humantime = { version = "2.0", optional = true }
 log = { version = "0.4.0", features = ["std"] }
-log-mdc = { version = "0.2.0-rc.1", registry = "kintree", optional = true }
 serde = { version = "1.0", optional = true, features = ["derive"] }
 serde-value = { version = "0.7", optional = true }
 thread-id = { version = "4", optional = true }
