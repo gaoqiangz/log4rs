@@ -1,10 +1,6 @@
 [package]
 name = "log4rs"
-<<<<<<< HEAD
-version = "1.1.1-rc.1"
-=======
-version = "1.2.0"
->>>>>>> 95b299de63f4794a3eda1a9a0b3173c07a34f3a0
+version = "1.2.0-rc.1"
 authors = ["Steven Fackler <sfackler@gmail.com>", "Evan Simmons <esims89@gmail.com>"]
 description = "[FORK] A highly configurable multi-output logging implementation for the `log` facade"
 license = "MIT/Apache-2.0"
