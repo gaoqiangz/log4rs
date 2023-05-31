@@ -1,18 +1,23 @@
 [package]
 name = "log4rs"
+<<<<<<< HEAD
 version = "1.1.1-rc.1"
+=======
+version = "1.2.0"
+>>>>>>> 95b299de63f4794a3eda1a9a0b3173c07a34f3a0
 authors = ["Steven Fackler <sfackler@gmail.com>", "Evan Simmons <esims89@gmail.com>"]
 description = "[FORK] A highly configurable multi-output logging implementation for the `log` facade"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/gaoqiangz/log4rs"
 readme = "README.md"
 keywords = ["log", "logger", "logging", "log4"]
-edition = '2018'
+edition = "2018"
+rust = "1.56"
 
 [features]
 default = ["all_components", "config_parsing", "yaml_format"]
 
-config_parsing = ["humantime", "serde", "serde-value", "typemap", "log/serde"]
+config_parsing = ["humantime", "serde", "serde-value", "typemap-ors", "log/serde"]
 yaml_format = ["serde_yaml"]
 json_format = ["serde_json"]
 toml_format = ["toml"]
@@ -62,7 +67,7 @@ log-mdc = { version = "0.2.0-rc.1", registry = "kintree", optional = true }
 serde = { version = "1.0", optional = true, features = ["derive"] }
 serde-value = { version = "0.7", optional = true }
 thread-id = { version = "4", optional = true }
-typemap = { version = "0.3", optional = true }
+typemap-ors = { version = "1.0.0", optional = true }
 serde_json = { version = "1.0", optional = true }
 serde_yaml = { version = "0.8.4", optional = true }
 toml = { version = "0.5", optional = true }
